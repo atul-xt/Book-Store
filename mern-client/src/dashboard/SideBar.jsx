@@ -9,7 +9,7 @@ const SideBar = () => {
   const {user} = useContext(AuthContext);
 
   return (
-    <Sidebar className="bg-gray-300 rounded-2xl mt-28 ml-10 min-w-80" aria-label="Sidebar with content separator example">
+    <Sidebar className="bg-gray-300 rounded-2xl mt-20 ml-10 min-w-80" aria-label="Sidebar with content separator example">
       <div>
         <img src={user?.photoURL || userImg} alt="profile" className="w-20 h-20 rounded-full mx-auto" />
         <p className="text-center text-lg font-semibold mt-2">{user?.displayName || "Demo User"}</p>

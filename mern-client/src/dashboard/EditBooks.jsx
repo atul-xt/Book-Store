@@ -104,10 +104,10 @@ const EditBooks = () => {
 }
 
   return (
-    <div className='px-4 my-12'>
+    <div className='px-4 my-4'>
       <h2 className='mb-8 text-3xl font-bold'>Update the book data</h2>
 
-      <form onSubmit={handleUpdate} className="flex lg:w-[1180px] flex-col flex-wrap gap-4 bg-gray-300 rounded-2xl p-10">
+      <form onSubmit={handleUpdate} className="flex lg:w-[900px] flex-col flex-wrap gap-4 bg-gray-300 rounded-2xl p-6">
       <div className='flex gap-8'>
         <div className='lg:w-1/2'>
           <div className="mb-2 block">
@@ -145,7 +145,7 @@ const EditBooks = () => {
         <div className="mb-2 block">
           <Label htmlFor="bookDescription" value="Book Description" />
         </div>
-        <Textarea defaultValue={bookDescription} id="bookDescription" placeholder="Write your book description..." required rows={7} className='w-full'/>
+        <Textarea defaultValue={bookDescription} id="bookDescription" placeholder="Write your book description..." required rows={5} className='w-full'/>
       </div>
 
       <div>
